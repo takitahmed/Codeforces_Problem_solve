@@ -1,10 +1,15 @@
 #include<stdio.h>
 main(){
-int a,i,c=0;
+int a,i,c=1;
   scanf("%d",&a);
-  for(i=2;i<a;i+=2)
+  if((a%4 == 0) || (a%6 == 0))
+  {
+  for(i=1;i<a;i++)
     {
-    c+=i;
+    c*=i;
     }
+  }
+  else 
+    pirntf("doesnet exits");
   printf("%d",c);
 }

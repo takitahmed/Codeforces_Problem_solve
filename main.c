@@ -1,9 +1,10 @@
 #include<stdio.h>
 main(){
-  int a;
+int a,i,c=0;
   scanf("%d",&a);
-  if(a==7)
-    printf("equal");
-  else
-    printf("not equal");
+  for(i=2;i<a;i+=2)
+    {
+    c+=i;
+    }
+  printf("%d",c);
 }
